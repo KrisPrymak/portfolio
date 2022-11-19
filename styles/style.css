@@ -407,164 +407,108 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 90%;
+  position: relative;
 }
 .page .main-description {
-  width: 40%;
+  width: 50%;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+.page .main-description__stack-title, .page .main-description__also-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.page .main-description__stack-list, .page .main-description__also-list {
+  padding-left: 1.5rem;
+}
+.page .main-description__stack-list__item, .page .main-description__also-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page .main-description__stack-list__item img, .page .main-description__also-list__item img {
+  margin-right: 0.9rem;
+}
+.page .main-description__stack-list__item:hover, .page .main-description__also-list__item:hover {
+  font-size: 2.3rem;
+}
+.page .main-description__stack-list__item:not(:last-child), .page .main-description__also-list__item:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 .page .main-description__stack {
-  margin-bottom: 7vw;
-}
-.page .main-description__stack-title {
-  font-size: 2vw;
-  line-height: 44px;
-  margin-bottom: 20px;
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase;
+  margin-bottom: 10rem;
 }
 .page .main-description__stack-list__item {
-  padding-left: 40px;
-  font-size: 1.7vw;
-  line-height: 2vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 900;
+  font-size: 1.8rem;
 }
 .page .main-description__stack-list__item:hover {
-  font-size: 35px;
-}
-.page .main-description__stack-list__item:not(:last-child) {
-  margin-bottom: 10px;
-}
-.page .main-description__stack-list__item img {
-  margin-right: 12px;
+  font-size: 2.3rem;
 }
 .page .main-description__also {
-  border: 1px solid #000;
-  padding: 30px;
-}
-.page .main-description__also-title {
-  font-size: 2vw;
-  line-height: 1vw;
-  margin-bottom: 20px;
-  font-family: "Nunito", sans-serif;
-  color: #ecbe00;
-  text-transform: uppercase;
+  width: 80%;
 }
 .page .main-description__also-list__item {
-  font-size: 1.7vw;
-  line-height: 2vw;
-  padding-left: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 900;
-  text-transform: lowercase;
+  font-size: 1.5rem;
 }
 .page .main-description__also-list__item:hover {
-  font-size: 30px;
+  font-size: 1.9rem;
 }
-.page .main-description__also-list__item:not(:last-child) {
-  margin-bottom: 10px;
+.page .main-round {
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30%;
 }
-.page .main-description__also-list__item img {
-  margin-right: 12px;
-}
-.page .main-aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 60%;
-  padding-right: 40px;
-  margin: 20px;
-  height: 96vh;
-  background-color: #000;
-}
-.page .main-aside__desc {
-  padding-top: 40px;
-}
-.page .main-aside__desc-place {
-  position: relative;
-  top: 2vw;
-  left: -6vw;
-  white-space: nowrap;
-  font-size: 1vw;
-  z-index: 10;
-}
-.page .main-aside__desc-name {
-  font-family: "Marck Script", cursive;
-  position: relative;
-  top: 40px;
-  left: -9vw;
-  font-size: 4vw;
-  z-index: 10;
-  margin-top: 140px;
+.page .main-text {
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
-.page .main-aside__box {
-  padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.page .main-text h1 {
+  font-family: "Marck Script", cursive;
+  font-size: 2.9vw;
 }
-.page .main-aside__box-shape {
-  width: 27vw;
-  position: relative;
-  left: -32vw;
-  top: -8vw;
-  z-index: 5;
+.page .main-text p {
+  font-size: 1.3vw;
 }
-.page .main-aside__box-img {
-  border-radius: 20px 110px;
-  width: 23vw;
+.page .main-aside {
+  width: 50%;
+  background-color: #000;
   position: relative;
-  top: -23vw;
-  left: 3vw;
+  z-index: 1;
 }
 .page .main-aside__box-time {
-  padding: 25px;
-  font-size: 1.5vw;
-  line-height: 35px;
-  margin-top: 20px;
   color: #fff;
-  width: 23vw;
-}
-.page .main-aside__box-time__calendar {
-  white-space: nowrap;
+  font-size: 1.7vw;
+  padding-top: 1.5rem;
+  text-align: center;
 }
 .page .main-aside__box-time__calendar-year, .page .main-aside__box-time__calendar-month, .page .main-aside__box-time__calendar-day {
   color: #ecbe00;
 }
-.page .main-aside__box-time__clock {
-  white-space: nowrap;
-}
 .page .main-aside__box-time__clock-hours, .page .main-aside__box-time__clock-minutes, .page .main-aside__box-time__clock-seconds {
   color: #ecbe00;
+}
+.page .main-aside__box-img {
+  border-radius: 20px 110px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 50%;
 }
 .page .main-landings {
   width: 100%;
