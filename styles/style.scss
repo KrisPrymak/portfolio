@@ -216,13 +216,12 @@ $blue: #8bcdcd;
                     height: 80vh;
                     border-radius: 20px;
                     margin: 10px;
-                    cursor: pointer;
                     flex: 1;
                     background-size: cover;
-                    //background-position: center;
                     background-repeat: no-repeat;
                     transition: all 500ms ease-in-out;
                     position: relative;
+                    cursor: pointer;
 
                     &__title {
                         position: absolute;
@@ -230,6 +229,7 @@ $blue: #8bcdcd;
                         bottom: 20px;
                         left: 500px;
                         opacity: 0;
+                        cursor: pointer;
                         a {
                             color: #000;
                             background-color: #aaa;
@@ -244,6 +244,7 @@ $blue: #8bcdcd;
 
                 .active {
                     flex: 10;
+                    cursor: auto;
 
                     & h3 {
                         opacity: 1;
